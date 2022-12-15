@@ -1,0 +1,15 @@
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.csproj.AssemblyReference.cache
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.AssemblyInfoInputs.cache
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.AssemblyInfo.cs
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.csproj.CoreCompileInputs.cache
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\bin\Debug\net6.0\HomeWorkSeminar1.exe
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\bin\Debug\net6.0\HomeWorkSeminar1.deps.json
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\bin\Debug\net6.0\HomeWorkSeminar1.runtimeconfig.json
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\bin\Debug\net6.0\HomeWorkSeminar1.dll
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\bin\Debug\net6.0\HomeWorkSeminar1.pdb
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.dll
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\refint\HomeWorkSeminar1.dll
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.pdb
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\HomeWorkSeminar1.genruntimeconfig.cache
+C:\Education\C_Sharp\Seminars\HomeWorkSeminar1\obj\Debug\net6.0\ref\HomeWorkSeminar1.dll
