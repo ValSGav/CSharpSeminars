@@ -55,3 +55,4 @@ Console.Write("Please, input number two:");
 int secondNumb = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(IsSQRT(firstNumb, secondNumb));
+
