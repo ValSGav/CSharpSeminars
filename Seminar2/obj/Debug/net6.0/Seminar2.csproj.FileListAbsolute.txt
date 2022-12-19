@@ -1,0 +1,15 @@
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.csproj.AssemblyReference.cache
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.AssemblyInfoInputs.cache
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.AssemblyInfo.cs
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.csproj.CoreCompileInputs.cache
+C:\Education\C_Sharp\Seminars\Seminar2\bin\Debug\net6.0\Seminar2.exe
+C:\Education\C_Sharp\Seminars\Seminar2\bin\Debug\net6.0\Seminar2.deps.json
+C:\Education\C_Sharp\Seminars\Seminar2\bin\Debug\net6.0\Seminar2.runtimeconfig.json
+C:\Education\C_Sharp\Seminars\Seminar2\bin\Debug\net6.0\Seminar2.dll
+C:\Education\C_Sharp\Seminars\Seminar2\bin\Debug\net6.0\Seminar2.pdb
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.dll
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\refint\Seminar2.dll
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.pdb
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\Seminar2.genruntimeconfig.cache
+C:\Education\C_Sharp\Seminars\Seminar2\obj\Debug\net6.0\ref\Seminar2.dll
