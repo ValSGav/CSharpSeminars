@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Education\\C_Sharp\\Seminars\\Seminar2\\Seminar2.csproj": {}
+    "C:\\Разработка\\old\\Csharp\\Seminar2\\Seminar2.csproj": {}
   },
   "projects": {
-    "C:\\Education\\C_Sharp\\Seminars\\Seminar2\\Seminar2.csproj": {
+    "C:\\Разработка\\old\\Csharp\\Seminar2\\Seminar2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Education\\C_Sharp\\Seminars\\Seminar2\\Seminar2.csproj",
+        "projectUniqueName": "C:\\Разработка\\old\\Csharp\\Seminar2\\Seminar2.csproj",
         "projectName": "Seminar2",
-        "projectPath": "C:\\Education\\C_Sharp\\Seminars\\Seminar2\\Seminar2.csproj",
-        "packagesPath": "C:\\Users\\tyapk\\.nuget\\packages\\",
-        "outputPath": "C:\\Education\\C_Sharp\\Seminars\\Seminar2\\obj\\",
+        "projectPath": "C:\\Разработка\\old\\Csharp\\Seminar2\\Seminar2.csproj",
+        "packagesPath": "C:\\Users\\B-1\\.nuget\\packages\\",
+        "outputPath": "C:\\Разработка\\old\\Csharp\\Seminar2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tyapk\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\B-1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -48,12 +48,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
