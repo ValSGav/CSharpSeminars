@@ -25,6 +25,20 @@ void WriteArray(int[] array)
     Console.WriteLine(resultString);
 }
 
+void WriteArrayOfDouble(double[] array)
+{
+    int sizeOfArray = array.Length;
+    string resultString = "[";
+    for (int i = 0; i < sizeOfArray; i++)
+    {
+        resultString += array[i];
+        if (i == sizeOfArray - 1) resultString += "]";
+        else resultString += ", ";
+    }
+
+    Console.WriteLine(resultString);
+}
+
 double[] CreateRandomArrayOfDouble(int size, int minValue, int maxValue)
 {
     double[] array = new double[size];
@@ -48,12 +62,30 @@ int GetCountOfEvenNumbInArray(int[] array)
     return count;
 }
 
-int GetSumOfOddIndexElements(Int[] array)
+int GetsumOfOddIndexElements(int[] array)
 {
-    
+    int sum = 0;
+    if (array.Length == 1) return 0;
+    for (int i = 1; i < array.Length; i+=2)
+    {
+       sum = sum + array[i]; 
+    }
+    return sum;
 }
 
+double GetTheDifferenceBwMaxAndMinElementsOfArray(double[] array)
+{
 
+    double max = array[0];
+    double min = array[0];
+    for (int i = 1; i < array.Length; i++)
+    {
+        if (array[i]> max) max = array[i];
+        else if (array[i] < min) min = array[i];
+    }
+
+    return max - min;
+}
 
 
 /*
@@ -78,15 +110,27 @@ Console.WriteLine($"Count of even number in array is {countOfEvenNumbers}");
 [-4, -6, 89, 6] -> 0
 */
 
+/*
+
 Console.Write("Input the size of array: ");
 int sizeOfArray = Convert.ToInt32(Console.ReadLine());
 int[] arrayOfRanomNumbers = CreateRandomArray(sizeOfArray, -1000, 1000);
-WriteArray(arrayOfRanomThreeDigitNumber);
+WriteArray(arrayOfRanomNumbers);
 
-int sumOfOddIndexElements = GetsumOfOddIndexElements(arrayOfRanomThreeDigitNumbers);
+int sumOfOddIndexElements = GetsumOfOddIndexElements(arrayOfRanomNumbers);
 
+Console.WriteLine($"Sum of odd index elements of array: {sumOfOddIndexElements}");
+*/
 
 /*
 Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 [3 7 22 2 78] -> 76
 */
+
+
+
+Console.Write("Input the size of array: ");
+int sizeOfArray = Convert.ToInt32(Console.ReadLine());
+double[] arrayOfRanomNumbers = CreateRandomArrayOfDouble(sizeOfArray, -1000, 1000);
+WriteArrayOfDouble(arrayOfRanomNumbers);
+Console.WriteLine(GetTheDifferenceBwMaxAndMinElementsOfArray(arrayOfRanomNumbers));
