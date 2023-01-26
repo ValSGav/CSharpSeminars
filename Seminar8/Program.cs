@@ -142,7 +142,7 @@ int[,] DeleteRowAndColumnWithMinValueOnIntersection(int [,] array, int[] arrayOf
     for (int i = 0;  i < returnArray.GetLength(0); i++)
     {
         if (i>= columnOfMinValue) currCol = i+1;
-        else currCol = i ;d
+        else currCol = i ;
 
         for (int j = 0; j < returnArray.GetLength(1); j++)
         {
