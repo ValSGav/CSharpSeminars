@@ -1,4 +1,5 @@
-﻿int[] CreateRandomArray(int size, int minValue, int maxValue)
+﻿/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     int[] array = new int[size];
 
@@ -12,8 +13,8 @@
 }
 
 void WriteArray(int[] array)
-{
-    int sizeOfArray = array.Length;
+
+{    int sizeOfArray = array.Length;
     string resultString = "[";
     for (int i = 0; i < sizeOfArray; i++)
     {
@@ -24,6 +25,7 @@ void WriteArray(int[] array)
 
     Console.WriteLine(resultString);
 }
+*/
 
 void WriteArrayOfDouble(double[] array)
 {
@@ -51,6 +53,7 @@ double[] CreateRandomArrayOfDouble(int size, int minValue, int maxValue)
     return array;
 }
 
+/*
 int GetCountOfEvenNumbInArray(int[] array)
 {
     int count = 0;
@@ -72,6 +75,7 @@ int GetsumOfOddIndexElements(int[] array)
     }
     return sum;
 }
+*/
 
 double GetTheDifferenceBwMaxAndMinElementsOfArray(double[] array)
 {

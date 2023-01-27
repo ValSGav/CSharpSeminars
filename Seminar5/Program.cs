@@ -1,4 +1,5 @@
-﻿int[] CreateRandomArray(int size, int minValue, int maxValue)
+﻿/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     int[] array = new int[size];
 
@@ -10,6 +11,7 @@
     return array;
 
 }
+*/
 
 void WriteArray(int[] array)
 {
@@ -25,6 +27,7 @@ void WriteArray(int[] array)
     Console.WriteLine(resultString);
 }
 
+/*
 int SumOfNegatinveElementsOfArray(int[] array)
 {
     int sum = 0;
@@ -43,10 +46,7 @@ void ChangePositiveToNegativeEelementsOfArray(int[] arr)
         arr[i] *= -1;
     }
 }
-
-
-
-
+*/
 /*
 Console.Write("Input length of array: ");
 int arrLength = Convert.ToInt32(Console.ReadLine());
@@ -77,7 +77,7 @@ WriteArray(arr);
 */
 
 //Написать программу, определяющую, присутствует ли заданное число в массиве.
-
+/*
 bool FindANumberInArray(int numb, int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -87,6 +87,7 @@ bool FindANumberInArray(int numb, int[] arr)
 
     return false;
 }
+*/
 
 int[] ReadArray(int sizeOfArray)
 {
