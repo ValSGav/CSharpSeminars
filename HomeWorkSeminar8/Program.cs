@@ -1,31 +1,4 @@
-﻿double[,] CreateRandomArry2dOfDouble()
-{
-    Console.Write($"Input a number of rows: ");
-    int rows = Convert.ToInt32(Console.ReadLine());
-
-    Console.Write($"Input a number of columns: ");
-    int columns = Convert.ToInt32(Console.ReadLine());
-
-    Console.Write($"Input a min value of array: ");
-    int minValue = Convert.ToInt32(Console.ReadLine());
-
-    Console.Write($"Input a max value of array: ");
-    int maxValue = Convert.ToInt32(Console.ReadLine());
-
-    double[,] array = new double[rows, columns];
-
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < columns; j++)
-        {
-            array[i, j] = Math.Round(new Random().Next(minValue, maxValue) + new Random().NextDouble(), 1);
-        }
-    }
-
-    return array;
-}
-
-int[,] CreateVoidArry2d()
+﻿int[,] CreateVoidArry2d()
 {
     Console.Write($"Input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
@@ -66,8 +39,37 @@ void Show3DArray(int[,,] array)
         }
     }
 }
+
+int[,] CreateRandomArry2d()
+{
+    Console.Write($"Input a number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write($"Input a number of columns: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write($"Input a min value of array: ");
+    int minValue = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write($"Input a max value of array: ");
+    int maxValue = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+        {
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+
+    return array;
+}
+
 /*
-Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы 
+каждой строки двумерного массива.
 Например, задан массив:
 1 4 7 2
 5 9 2 3
@@ -77,10 +79,34 @@ void Show3DArray(int[,,] array)
 9 5 3 2
 8 4 4 2
 */
+/*
+void SortElementsOfEachRowIn2DArray(int[,] array)
+{
+    for (int row = 0; row < array.GetLength(0); row++)
+    {
+        for (int i = 0; i < array.GetLength(1); i++)
+        {
+            for (int j = i + 1; j < array.GetLength(1); j++)
+            {
+                if (array[row, i] < array[row, j])
+                {
+                    int temp = array[row, i];
+                    array[row, i] = array[row, j];
+                    array[row, j] = temp;
+                }
+            }
 
+        }
+    }
+}
 
-
-
+int[,] array = CreateRandomArry2d();
+Console.WriteLine("Array before sort");
+ShowArray2d(array);
+SortElementsOfEachRowIn2DArray(array);
+Console.WriteLine("Array after sort");
+ShowArray2d(array);
+*/
 
 /*
 Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -95,8 +121,43 @@ void Show3DArray(int[,,] array)
 
 5 2 6 7
 
-Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей 
+суммой элементов: 1 строка
+*/
 
+/*
+int GetIndexOfRowEWithTheSmallestSumOfElements(int[,] array)
+{
+    int indexOfSmallestRow = 0;
+    int minSum = 0;
+
+    for (int row = 0; row < array.GetLength(0); row++)
+    {
+        int sumElementsOfRow = 0;
+        for (int col = 0; col < array.GetLength(1); col++)
+        {
+            sumElementsOfRow += array[row, col];
+        }
+        if (row == 0)
+            minSum = sumElementsOfRow;
+        else
+        if (sumElementsOfRow < minSum)
+        {
+            minSum = sumElementsOfRow;
+            indexOfSmallestRow = row;
+        }
+    }
+    return indexOfSmallestRow;
+}
+
+int[,] array = CreateRandomArry2d();
+Console.WriteLine();
+ShowArray2d(array);
+int indexOfSmallestRow = GetIndexOfRowEWithTheSmallestSumOfElements(array);
+Console.WriteLine($"Index of row with smallest sum of elements is {indexOfSmallestRow}");
+*/
+
+/*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
 2 4 | 3 4
@@ -105,11 +166,52 @@ void Show3DArray(int[,,] array)
 18 20
 15 18
 */
-int[,] MultiplicationOfTwoMatrix(int[,] array1, int[,] array2)
+
+/*
+int MultRowAndColumnOfTwoArray(int[,] arr1, int[,] arr2, int rowOfArr1, int columnOfArr2, int count)
 {
-    
+    int sum = 0;
+    for (int i = 0; i < count; i++)
+    {
+        sum += arr1[rowOfArr1, i] * arr2[i, columnOfArr2];
+    }
+    return sum;
 }
 
+
+int[,] MultTwoConsistentMatrix(int[,] arr1, int[,] arr2)
+{
+
+    int count = arr1.GetLength(1);
+    int rows = arr1.GetLength(0);
+    int columns = arr2.GetLength(1);
+    int[,] arrRet = new int[rows, columns];
+    if (count == arr2.GetLength(0))
+    {
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                arrRet[i, j] = MultRowAndColumnOfTwoArray(arr1, arr2, i, j, count);
+            }
+        }
+    }
+    return arrRet;
+}
+
+Console.WriteLine("Input matrix 1:");
+int[,] arr1 = CreateRandomArry2d();
+Console.WriteLine("Input matrix 2:");
+int[,] arr2 = CreateRandomArry2d();
+Console.WriteLine("");
+Console.WriteLine("Matrix 1:");
+ShowArray2d(arr1);
+Console.WriteLine("Matrix 2:");
+ShowArray2d(arr2);
+
+Console.WriteLine("Multiple of matrix 1 and matrix 2");
+ShowArray2d(MultTwoConsistentMatrix(arr1, arr2));
+*/
 
 /*
 Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -120,7 +222,7 @@ int[,] MultiplicationOfTwoMatrix(int[,] array1, int[,] array2)
 26(1,0,1) 55(1,1,1)
 */
 
-/**************************************************************************************************
+/*
 int[,,] CreateRandom3DArrayOfNonRepeatingNumber(int columns, int rows, int layers, int countOfTheDigitsInTheNumber)
 {
     int minNumber = Convert.ToInt32(Math.Pow(Convert.ToDouble(10), Convert.ToDouble(countOfTheDigitsInTheNumber - 1)));
@@ -174,7 +276,7 @@ int countOfTheDigits = Convert.ToInt32(Console.ReadLine());
 
 int[,,] array3D = CreateRandom3DArrayOfNonRepeatingNumber(columns, rows, layers, countOfTheDigits);
 Show3DArray(array3D);
-**************************************************************************************************/
+*/
 
 /*
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
@@ -185,7 +287,7 @@ Show3DArray(array3D);
 10 09 08 07
 */
 
-/**************************************************************************************************
+/*
 void FillArraySpirally(int[,] array, int[,] variantsOfDirections, int fillValue = 1, int direction = 0, int col = 0, int row = 0, bool directionChanged = false)
 {
 
@@ -225,4 +327,4 @@ int[,] array = CreateVoidArry2d();
 FillArraySpirally(array, variantsOfDirections);
 //FillArraySpirally(array, variantsOfDirections,100);
 ShowArray2d(array);
-**************************************************************************************************/
+*/
